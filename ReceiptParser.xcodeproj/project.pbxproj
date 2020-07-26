@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		9EA43D8B24CD4DB0000A1F45 /* ImagePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EA43D8A24CD4DB0000A1F45 /* ImagePicker.swift */; };
 		9EA43D8D24CD4DD8000A1F45 /* ImagePickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EA43D8C24CD4DD8000A1F45 /* ImagePickerView.swift */; };
+		9EA43D8F24CE18FF000A1F45 /* ImagePickerCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EA43D8E24CE18FF000A1F45 /* ImagePickerCoordinator.swift */; };
 		9EC49FE724959908007B5DC1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EC49FE624959908007B5DC1 /* AppDelegate.swift */; };
 		9EC49FE924959908007B5DC1 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EC49FE824959908007B5DC1 /* SceneDelegate.swift */; };
 		9EC49FEB24959908007B5DC1 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EC49FEA24959908007B5DC1 /* ContentView.swift */; };
@@ -20,6 +21,7 @@
 /* Begin PBXFileReference section */
 		9EA43D8A24CD4DB0000A1F45 /* ImagePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePicker.swift; sourceTree = "<group>"; };
 		9EA43D8C24CD4DD8000A1F45 /* ImagePickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePickerView.swift; sourceTree = "<group>"; };
+		9EA43D8E24CE18FF000A1F45 /* ImagePickerCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePickerCoordinator.swift; sourceTree = "<group>"; };
 		9EC49FE324959908007B5DC1 /* ReceiptParser.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ReceiptParser.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9EC49FE624959908007B5DC1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9EC49FE824959908007B5DC1 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -45,6 +47,7 @@
 			isa = PBXGroup;
 			children = (
 				9EA43D8C24CD4DD8000A1F45 /* ImagePickerView.swift */,
+				9EA43D8E24CE18FF000A1F45 /* ImagePickerCoordinator.swift */,
 				9EA43D8A24CD4DB0000A1F45 /* ImagePicker.swift */,
 			);
 			path = ImagePicker;
@@ -162,6 +165,7 @@
 			files = (
 				9EC49FE724959908007B5DC1 /* AppDelegate.swift in Sources */,
 				9EA43D8B24CD4DB0000A1F45 /* ImagePicker.swift in Sources */,
+				9EA43D8F24CE18FF000A1F45 /* ImagePickerCoordinator.swift in Sources */,
 				9EC49FE924959908007B5DC1 /* SceneDelegate.swift in Sources */,
 				9EC49FEB24959908007B5DC1 /* ContentView.swift in Sources */,
 				9EA43D8D24CD4DD8000A1F45 /* ImagePickerView.swift in Sources */,

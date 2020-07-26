@@ -9,16 +9,16 @@
 import SwiftUI
 
 struct ImagePickerView: View {
-    @Binding var showImagePicker: Bool
+    @Binding var isShown: Bool
     @Binding var image: Image?
     
     var body: some View {
-        ImagePicker(isShown: $showImagePicker, image: $image)
+        ImagePicker(isShown: self.$isShown, image: self.$image)
     }
 }
 
 struct ImagePickerView_Previews: PreviewProvider {
     static var previews: some View {
-        ImagePickerView(showImagePicker: .constant(false), image: .constant(Image("")))
+        ImagePickerView(isShown: .constant(false), image: .constant(nil))
     }
 }

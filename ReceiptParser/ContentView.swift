@@ -10,8 +10,8 @@ import SwiftUI
 
 struct ContentView: View {
     
-    @State private var showImagePicker: Bool = false
-    @State private var image: Image? = nil
+    @State private var isShown = false
+    @State private var image: Image?
     
     var body: some View {
         VStack {
@@ -19,14 +19,14 @@ struct ContentView: View {
             image?.resizable().scaledToFit()
             
             Button("Choose Photo") {
-                self.showImagePicker = true
+                self.isShown = true
             }.padding()
                 .background(Color.green)
                 .foregroundColor(Color.white)
                 .cornerRadius(10)
             
-        }.sheet(isPresented: self.$showImagePicker) {
-            ImagePickerView(showImagePicker: self.$showImagePicker, image: self.$image)
+        }.sheet(isPresented: self.$isShown) {
+            ImagePickerView(isShown: self.$isShown, image: self.$image)
         }
     }
 }
