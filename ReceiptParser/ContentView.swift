@@ -9,8 +9,25 @@
 import SwiftUI
 
 struct ContentView: View {
+    
+    @State private var showImagePicker: Bool = false
+    @State private var image: Image? = nil
+    
     var body: some View {
-        Text("Hello, World!")
+        VStack {
+            
+            image?.resizable().scaledToFit()
+            
+            Button("Choose Photo") {
+                self.showImagePicker = true
+            }.padding()
+                .background(Color.green)
+                .foregroundColor(Color.white)
+                .cornerRadius(10)
+            
+        }.sheet(isPresented: self.$showImagePicker) {
+            ImagePickerView(showImagePicker: self.$showImagePicker, image: self.$image)
+        }
     }
 }
 
