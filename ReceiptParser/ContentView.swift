@@ -16,7 +16,7 @@ struct ContentView: View {
     var body: some View {
         VStack {
             
-            image?.resizable().scaledToFit()
+            ImagePickerView(image: $image)
             
             Button("Choose Photo") {
                 self.isShown = true
@@ -26,7 +26,7 @@ struct ContentView: View {
                 .cornerRadius(10)
             
         }.sheet(isPresented: self.$isShown) {
-            ImagePickerView(isShown: self.$isShown, image: self.$image)
+            ImagePickerGetter(isShown: self.$isShown, image: self.$image)
         }
     }
 }
